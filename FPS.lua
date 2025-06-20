@@ -14,13 +14,13 @@ local Terrain = workspace.Terrain
 
 if settings then
 	local RenderSettings = settings():GetService("RenderSettings")
-	local UserGameSettings = UserSettings():GetService("UserGameSettings")
+	--local UserGameSettings = UserSettings():GetService("UserGameSettings")
 
 	if Settings.Graphics then
 		RenderSettings.EagerBulkExecution = false
-		RenderSettings.QualityLevel = Enum.QualityLevel.Level01
+		--RenderSettings.QualityLevel = Enum.QualityLevel.Level01
 		RenderSettings.MeshPartDetailLevel = Enum.MeshPartDetailLevel.Level01
-		UserGameSettings.SavedQualityLevel = Enum.SavedQualitySetting.QualityLevel1
+		--UserGameSettings.SavedQualityLevel = Enum.SavedQualitySetting.QualityLevel1
 		workspace.InterpolationThrottling = Enum.InterpolationThrottlingMode.Enabled
 	end
 end
